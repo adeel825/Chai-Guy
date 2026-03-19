@@ -1,0 +1,33 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Work+Sans:wght@300;400;500;600&display=swap');
+
+@theme {
+  --font-headline: "Fraunces", serif;
+  --font-body: "Newsreader", serif;
+  --font-label: "Work Sans", sans-serif;
+
+  --color-primary: #5e2405;
+  --color-primary-container: #7b3a1a;
+  --color-on-primary: #ffffff;
+  --color-background: #F5EFE0;
+  --color-surface: #F5EFE0;
+  --color-on-surface: #1d1c13;
+  --color-on-surface-variant: #54433c;
+  --color-outline: #87736b;
+  --color-outline-variant: #d9c2b9;
+  --color-surface-container: #EDE6D3;
+  --color-surface-container-low: #F9F4E8;
+  --color-surface-container-high: #eee8d9;
+}
+
+@layer base {
+  body {
+    @apply font-body text-on-surface bg-background antialiased;
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuADURIPRuogH6OWNAYZ9dFE0tl5ycuPB3AiK3kueBxf916ip8-p9EF4g10TiMzmotw9glVN_swmhYYwwtdyyDgWAiPHnz4unqIEXmQ2rlkKY0hvX3HQvLOkNvCV4qkB432R05T16UfE473OEXorkq6EPYn1vqjvevpV6M8QdGtn4c7XmUDTuOeuGu_rYd8vyxzITkMjeOucihtgfWviGUqYYR9caIQ8pFBNR8oPfkuqVnbI0GQPiuaFQ9mos9Tm4iwmprkvoxiP7nQ);
+  }
+}
+
+.section-divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--color-outline-variant), transparent);
+}
